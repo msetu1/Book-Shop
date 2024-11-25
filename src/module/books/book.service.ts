@@ -27,10 +27,16 @@ const getUpdateBook =async(data:IProduct, id:string)=>{
     const result = await BookModel.findByIdAndUpdate(id,data,{new: true});
     return result;
 }
+const deleteABook =async(id:string)=>{
+    
+    const result = await BookModel.findByIdAndDelete(id);
+    return result;
+}
 
 export const bookService={
     createBooks,
     getAllBooks,
     getSingleBook,
-    getUpdateBook
+    getUpdateBook,
+    deleteABook
 }
