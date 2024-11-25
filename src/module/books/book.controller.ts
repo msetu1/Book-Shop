@@ -66,13 +66,13 @@ const getUpdateBook = async (req: Request, res: Response) => {
 
     res.json({
       status: true,
-      message: 'Book retrieved successfully',
+      message: 'Book updated successfully',
       data: result,
     });
   } catch (error) {
     res.json({
       status: false,
-      message: 'Book cannot retrieved',
+      message: 'Book cannot updated',
       error,
     });
   }
