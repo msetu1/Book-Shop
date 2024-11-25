@@ -22,8 +22,15 @@ const getSingleBook =async(id:string)=>{
     return result;
 }
 
+const getUpdateBook =async(data:IProduct, id:string)=>{
+    
+    const result = await BookModel.findByIdAndUpdate(id,data,{new: true});
+    return result;
+}
+
 export const bookService={
     createBooks,
     getAllBooks,
-    getSingleBook
+    getSingleBook,
+    getUpdateBook
 }
