@@ -39,8 +39,27 @@ const getAllBooks = async (req: Request, res: Response) => {
     });
   }
 };
+const getSingleBook = async (req: Request, res: Response) => {
+  try {
+    const id=req.params.id;
+    const result = await bookService.getSingleBook(id);
+
+    res.json({
+      status: true,
+      message: 'Book retrieved successfully',
+      data: result,
+    });
+  } catch (error) {
+    res.json({
+      status: false,
+      message: 'Book cannot retrieved',
+      error,
+    });
+  }
+};
 
  export const bookController ={
 createBooks,
-getAllBooks
+getAllBooks,
+getSingleBook
  }
