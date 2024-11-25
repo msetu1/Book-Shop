@@ -1,3 +1,7 @@
+# Hi !!
+## This is setu Akther
+Please take a look at my README file, and if there are any mistakes or shortcomings, kindly point them out with forgiveness and understanding. 
+
 # Book Shop B4A2V1
 
 ## Objective
@@ -14,21 +18,48 @@ Develop an Express application using TypeScript and MongoDB (via Mongoose) to ma
 ---
 
 ## Project Setup
-1. Clone the repository:
+1. Setup
    ```
-   git clone https://github.com/msetu1/Book-Shop.git
+   npm init -y
    ```
    ```
-   cd book-shop
+   npm i express cors dotenv
+   ```
+   ```
+   npm install typescript --save-dev
+   ```
+   ```
+   npm install mongoose --save
+   ```
+   ```
+   npm i ts-node-dev --save-dev
+   ```
+   ```
+   tsc -init
    ```
 
+2. Typescript related setup----
    ```
-   npm install
+   npm i --save-dev @types/node
+   ```
+   ```
+   npm i --save-dev @types/express
+   ```
+   ```
+   npm i --save-dev @types/cors
    ```
 
+3. eslint and prettier setup----
    ```
-   npm run start:dev
+   npm i -D eslint@9.14.0 @eslint/js @types/eslint__js typescript typescript-eslint
    ```
+   ```
+   npm i -D eslint@9.14.0
+   ```
+   ```
+   npm i -D --exact prettier
+   ```
+
 # api documentation
 
 ### Create a Book
@@ -84,3 +115,5 @@ Example:
 - Endpoint: /api/orders/revenue<br>
 Method: GET 
 
+#### GitHub Repository Link: 
+#### Live Deployment Link: 
