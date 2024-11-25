@@ -97,7 +97,7 @@ const deleteABook = async (req: Request, res: Response) => {
 };
 
 
- export const bookController ={
+export const bookController ={
 createBooks,
 getAllBooks,
 getSingleBook,

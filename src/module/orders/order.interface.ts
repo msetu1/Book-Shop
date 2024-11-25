@@ -1,8 +1,9 @@
-import { ObjectId } from "mongoose";
 
 export interface IOrder{
     email:string,
-    product:ObjectId,
+    product:string,
     quantity:number,
     totalPrice:number,
+    createdAt?: Date;
+    updatedAt?: Date;
 }
